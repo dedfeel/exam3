@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+.tort{
+    transition-duration: 3s;
+    position: relative;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.tort:hover{
+    transition-duration: 3s;
+    transform: rotate(180deg);
+    /* transform: scale(1.5); */
+    width: 30rem;
+    height: 30rem;
+}
+
+.figur{
+    border: solid red ;
+    width: 700px;
+    height: 300px;
+    margin-left: 50px;
+    
+.dop{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: lix;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+}
+
+.loading{
+    border: 15px solid grey;
+    border-right: 15px solid blue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+    animation-name: dogs;
+    animation-duration: 1s;
+    animation-iteration-count: infinite ;
+}
+
+
+
+@keyframes lix {
+    0%{
+        transform: translateX( 0%);
+    }
+    50%{
+        transform: translateX( 133%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes dogs{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
